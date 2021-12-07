@@ -1,17 +1,82 @@
-<!--Template for testing social authentication adapted from Muhd Rahiman, 2/27/2021
-    https://dev.to/mdrhmn/django-google-authentication-using-django-allauth-18f8-->
-
-
 <html>
 <head>
-    <style>
-        body {
-            margin-bottom:  25px;
-            background: rgb(228,231,235);
-            background: linear-gradient(0deg, rgba(228,231,235,1) 0%, rgba(149,162,191,1) 49%, rgba(66,95,142,0.9980988593155894) 100%);
 
-        }
+<style>
+body {
+  display: flex;
+  padding: 0;
+  background-color: #222;
+  justify-content: center;
+  align-items: center;
+}
 
-    </style>
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
+}
+
+#red {
+  animation: flicker 2s ease alternate infinite;
+}
+
+#blue {
+  animation: flicker 1s ease alternate infinite;
+}
+
+#green {
+  animation: flicker 3s ease alternate infinite;
+}
+
+#yellow {
+  animation: flicker 4s ease alternate infinite;
+}
+
+#purple{
+  animation: flicker .5s ease alternate infinite;
+}
+
+</style>
 </head>
-</html>
+<body>
+
+<div class = "container">
+	<div class="row">
+	<div class="col">
+		
+		<div class="row">
+			
+		    	<button onclick="window.location.href='';" id="red" style = "height: 100px; width: 100px; background-color: black; color: white" type="submit">Hey whats up</button>
+
+		    	<button onclick="window.location.href='';" id="blue" style = "height: 100px; width: 100px; background-color: black; color: white" type="submit">Continue</button>
+
+		    	<button onclick="window.location.href='';" id="green" style = "height: 100px; width: 100px;background-color: black; color: white" type="submit">Continue</button>
+		    	
+		    	<button onclick="window.location.href='';" id="yellow" style = "height: 100px; width: 100px; background-color: black; color: white" type="submit">Hey whats up</button>
+
+		    	<button onclick="window.location.href='';" id="purple" style = "height: 100px; width: 100px; background-color: black; color: white" type="submit">Continue</button>
+
+		    	<button onclick="window.location.href='';" id="purple" style = "height: 100px; width: 100px;background-color: black; color: white" type="submit">Continue</button>
+		    	
+		    	<button onclick="window.location.href='';" id="yellow" style = "height: 100px; width: 100px; background-color: black; color: white" type="submit">Hey whats up</button>
+
+		    	<button onclick="window.location.href='';" id="green" style = "height: 100px; width: 100px; background-color: black; color: white" type="submit">Continue</button>
+
+		    	<button onclick="window.location.href='';" id="blue" style = "height: 100px; width: 100px;background-color: black; color: white" type="submit">Continue</button>
+		    	
+		    	<button onclick="window.location.href='';" id="red" style = "height: 100px; width: 100px; background-color: black; color: white" type="submit">Hey whats up</button>
+
+		    	<button onclick="window.location.href='';" id="green" style = "height: 100px; width: 100px; background-color: black; color: white" type="submit">Continue</button>
+
+		    	<button onclick="window.location.href='';" id="blue" style = "height: 100px; width: 100px;background-color: black; color: white" type="submit">Continue</button>
+			
+		</div>
+
+	
+    </div>
+  </div>
+</div>
+
+
