@@ -20,4 +20,13 @@ def index4(request):
 def index5(request):
     return render(request, 'colors/colorstuff5.html')
 
+def index6(request):
+    return render(request, 'colors/colorstuff6.html')
+
+def index7(request):
+    return render(request, 'colors/colorstuff7.html')
+
+def index8(request):
+    return render(request, 'colors/colorstuff8.html')
+
 # Create your views here.

@@ -9,5 +9,8 @@ urlpatterns = [
     path('3', views.index3, name='index3'),
     path('4', views.index4, name='index4'),
     path('5', views.index5, name='index5'),
+    path('6', views.index6, name='index6'),
+    path('7', views.index7, name='index7'),
+    path('8', views.index8, name='index8'),
 
 ]
