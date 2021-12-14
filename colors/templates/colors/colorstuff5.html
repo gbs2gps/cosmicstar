@@ -1,0 +1,140 @@
+<html>
+<head>
+
+<style>
+body {
+	
+  display: flex;
+  padding: 2em;
+  animation: myfirst 2s infinite;
+  margin: auto;
+
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
+}
+
+#button {
+	animation: flicker 5s ease alternate infinite;
+	border-radius: 50%;
+}
+
+@keyframes myfirst {
+    0% {background:#EA1919;}
+    3% {background:#EA3319;}
+    5% {background:#EA4919;}
+    8% {background:#EA6919;}
+    10% {background:#EA8319;}
+    13% {background:#EAA319;}
+    15% {background:#EAC019;}
+    17% {background:#EADD19;}
+    20% {background:#D7EA19;}
+    23% {background:#BAEA19;}
+    25% {background:#A3EA19;}
+    28% {background:#86EA19;}
+    30% {background:#70EA19;}
+    32% {background:#4CEA19;}
+    35% {background:#19EA26;}
+    38% {background:#19EA59;}
+    40% {background:#19EA80;}
+    43% {background:#19EAA6;}
+    45% {background:#19EACD;}
+    48% {background:#19EADD;}
+    50% {background:#19E4EA;}
+    52% {background:#19C7EA;}
+    55% {background:#19ADEA;}
+    57% {background:#1996EA;}
+    60% {background:#1983EA;}
+    62% {background:#1960EA;}
+    65% {background:#193CEA;}
+    68% {background:#2619EA;}
+    70% {background:#4919EA;}
+    73% {background:#6319EA;}
+    75% {background:#8019EA;}
+    78% {background:#9D19EA;}
+    80% {background:#BA19EA;}
+    83% {background:#D319EA;}
+    85% {background:#EA19E4;}
+    88% {background:#EA19CD;}
+    90% {background:#EA19AD;}
+    93% {background:#EA1986;}
+    95% {background:#EA195D;}
+    97% {background:#EA1943;}
+    100% {background:#EA191F;}
+}
+
+#red {
+	
+	border-radius: 50%;
+
+	animation: flicker .3s ease alternate infinite;
+ 
+}
+
+#blue {
+		border-radius: 50%;
+
+  animation: flicker 1.2s ease alternate infinite;
+}
+
+#green {
+		border-radius: 50%;
+
+  animation: flicker .2s ease alternate infinite;
+}
+
+#yellow {
+	
+	border-radius: 50%;
+
+  	animation: flicker .23s ease alternate infinite;
+}
+
+#purple{
+	
+	border-radius: 50%;
+
+  	animation: flicker .52s ease alternate infinite;
+}
+
+#black{
+		
+	border-radius: 50%;
+
+ 	animation: flicker 5s ease alternate infinite;
+}
+
+</style>
+</head>
+<body>
+<center>
+<div class = "container">
+	<div class="row">
+	<div class="col">
+		
+		<div class="row">
+				<br>
+
+<form action="{% url 'index' %}" method="post">		
+{% csrf_token %}
+	<button id="yellow" style = "height: 110px; width: 110px; background-color: #829754; color: black" type="submit"></button>
+</form>
+				
+		    	
+		    	
+		    	
+		    
+
+		</div>
+
+	
+    </div>
+  </div>
+</div>
+</center>
+
