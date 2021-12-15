@@ -1,0 +1,1121 @@
+<html>
+<head>
+
+<style>
+body {
+  
+  display: flex;
+  padding: 2em;
+  margin: auto;
+  max-width: 1500px;
+  background-color: #D3D3D3;
+
+}
+
+@keyframes flicker {
+ 0% {
+    opacity:0;
+  } 100% {
+    opacity: 1;
+  }
+}
+
+#button {
+  animation: flicker 5s ease alternate infinite;
+}
+
+@keyframes myfirst {
+   0% {background:#000000;}
+    3% {background:#B2BEB5;}
+    5% {background:#7393B3;}
+    8% {background:#36454F;}
+    10% {background:#A9A9A9;}
+    13% {background:#D3D3D3;}
+    15% {background:#899499;}
+    17% {background:#71797E;}
+    20% {background:#6082B6;}
+    23% {background:#808080;}
+    25% {background:#818589;}
+    28% {background:#E5E4E2;}
+    30% {background:#C0C0C0;}
+    32% {background:#708090;}
+    35% {background:#848884;}
+    38% {background:#c9c0bb;}
+    40% {background:#c4c3d0;}
+    43% {background:#b2beb5;}
+    45% {background:#666699;}
+    48% {background:#898a74;}
+    50% {background:#8a7f80;}
+    52% {background:#777696;}
+    55% {background:#444c38;}
+    57% {background:#3b444b;}
+    60% {background:#483c32;}
+    62% {background:#3d4035;}
+    65% {background:#353839;}
+    68% {background:#555d50;}
+    70% {background:#555555;}
+    73% {background:#635147;}
+    75% {background:#343434;}
+    78% {background:#232b2b;}
+    80% {background:#253529;}
+    83% {background:#778899;}
+    85% {background:#708090;}
+    88% {background:#DCDCDC;}
+    90% {background:#54626F;}
+    93% {background:#4A646C;}
+    95% {background:#696969;}
+    97% {background:#B6B6B4;}
+    100% {background:#000000;}
+}
+
+#yellow {
+  
+  border-radius: 50%;
+
+  animation: flicker .3s ease alternate infinite;
+ 
+}
+
+#blue {
+  
+
+  animation: flicker 1.2s ease alternate infinite;
+}
+
+#green {
+  
+  border-radius: 20%;
+
+  animation: flicker .2s ease alternate infinite;
+}
+
+#red {
+  
+  border-radius: 10%;
+
+  animation: flicker .23s ease alternate infinite;
+}
+
+#purple{
+  
+  border-radius: 75%;
+
+  animation: flicker .52s ease alternate infinite;
+}
+
+#black{
+    
+  border-radius: 40%;
+
+  animation: flicker .7s ease alternate infinite;
+}
+
+</style>
+</head>
+<body>
+<center>
+<div class = "container">
+  <div class="row">
+  <div class="col">
+    
+    <div class="row">
+
+<form action="{% url 'index21' %}" method="post">   
+{% csrf_token %}
+  
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #5A5C40" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #4A646C" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #635147" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>  
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+
+  <button id="red" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+     <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #635147" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+ 
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #5A5C40" type="submit"></button>
+    <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+   <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+   <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+   <button id="black" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #343434" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #4A646C" type="submit"></button>
+
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+    <button id="green" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+   <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+    <button id="green" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>  
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+    <button id="green" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+       <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+      <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #4A646C" type="submit"></button>
+    <button id="purple" style = "height: 30px; width: 30px; background-color: #635147" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #5A5C40" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+     <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+    <button id="blue" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #4A646C" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+    <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+     <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+   <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+    <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+   <button id="black" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+
+  <button id="green" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #5A5C40" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #343434" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+    <button id="purple" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #232b2b" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+    <button id="purple" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+     <button id="purple" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #4A646C" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #635147" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+    <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+   <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+    <button id="green" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+    <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #5A5C40" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #343434" type="submit"></button>
+
+  <button id="green" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #232b2b" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #343434" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #353839" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #D3D3D3" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #899499" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #4A646C" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #5A5C40" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #253529" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #A9A9A9" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #696969" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #71797E" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #183746df" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #555555" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #B6B6B4" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #343434" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+    <button id="purple" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #818589" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #3b444b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #3d4035" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #71386d" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #000000" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #232b2b" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #444c38" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #635147" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #708090" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #848884" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #1897adce" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="red" style = "height: 30px; width: 30px; background-color: #c4c3d0" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #666699" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #6082B6" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="yellow" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #E5E4E2" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #777696" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #483c32" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #808080" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #54626F" type="submit"></button>
+
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #36454F" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #c9c0bb" type="submit"></button>
+  <button id="blue" style = "height: 30px; width: 30px; background-color: #635147" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #898a74" type="submit"></button>
+  <button id="black" style = "height: 30px; width: 30px; background-color: #555d50" type="submit"></button>
+  <button id="purple" style = "height: 30px; width: 30px; background-color: #029832" type="submit"></button>
+  <button id="green" style = "height: 30px; width: 30px; background-color: #B2BEB5" type="submit"></button>
+  
+</form>
+
+
+          
+          
+        
+
+    </div>
+
+  
+    </div>
+  </div>
+</div>
+</center>

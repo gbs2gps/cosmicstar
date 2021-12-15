@@ -7,7 +7,7 @@ body {
   display: flex;
   padding: 2em;
   margin: auto;
-  background-color: #000000;
+  background-color: #D3D3D3;
   max-width: 1500px;
 
 
@@ -23,7 +23,8 @@ body {
 
 #yellow {
 	
-	border-radius: 50%;
+	
+  border-radius: 50%;
 
 	animation: flicker 1s ease alternate infinite;
  
@@ -31,35 +32,39 @@ body {
 
 #blue {
 	
-  border-radius: 50%;
+  
 
   animation: flicker 1.2s ease alternate infinite;
 }
 
 #green {
 	
-  border-radius: 50%;
+  
+  border-radius: 20%;
 
   animation: flicker .2s ease alternate infinite;
 }
 
 #red {
 	
-	border-radius: 50%;
+	
+  border-radius: 25%;
 
   animation: flicker 1.3s ease alternate infinite;
 }
 
 #purple{
 	
-	border-radius: 50%;
+	  border-radius: 75%;
+
 
   animation: flicker .52s ease alternate infinite;
 }
 
 #black{
 		
-	border-radius: 50%;
+	  border-radius: 40%;
+
 
  	animation: flicker .7s ease alternate infinite;
 }
@@ -69,7 +74,7 @@ body {
 <body>
 
 <center>
-<form action="{% url 'index5' %}" method="post">    
+<form action="{% url 'index23' %}" method="post">    
 {% csrf_token %}
  
 
@@ -1103,5 +1108,3 @@ body {
  
 </form>
 </center>
-     
-          
