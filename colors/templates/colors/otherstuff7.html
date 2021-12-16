@@ -9,7 +9,7 @@ body {
   margin: auto;
   align-content: center;
   justify-content: center;
-  background-color: #D3D3D3
+  background-color: #32CD32;
 
 
 }
@@ -20,6 +20,13 @@ body {
   } 100% {
     opacity: 1;
   }
+}
+
+#blac{
+    
+  border-radius: 25%;
+
+  animation: flicker .25s ease alternate infinite;
 }
 
 #black{
@@ -35,8 +42,10 @@ body {
 
 <center>
 <div class="text-center">
-<form action="{% url 'index26' %}" method="post">    
+<form action="{% url 'index11' %}" method="post">    
 {% csrf_token %}
+  <button id="black" style = "height: 300px; width: 300px; background-color: #000000; text-align: center" type="submit"></button>
+  <button id="blac" style = "height: 300px; width: 300px; background-color: #000000; text-align: center" type="submit"></button>
   <button id="black" style = "height: 300px; width: 300px; background-color: #000000; text-align: center" type="submit"></button>
 </form>
 </div>
